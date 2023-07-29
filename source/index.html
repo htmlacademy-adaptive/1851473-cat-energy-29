@@ -5,8 +5,86 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+    <header class="header">
+      <div class="header__container">
+        <div class="header__wrapper">
+          <a href="#" class="logo">
+            <img src="img/logo-mobile.svg" alt="Логотип." class="logo__img">
+          </a>
+          <a href="#" class="logo logo--text">
+            <img src="img/logo-text.svg" alt="Cat energy." class="logo__img-text">
+          </a>
+          <button class="header__burger" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                главная
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                каталог продукции
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="promo">
+        <div class="promo__container container">
+          <h1 class="promo__title">
+            Функциональное питание для котов
+          </h1>
+          <p class="promo__desc">
+            Занялся собой? Займись котом!
+          </p>
+          <img src="img/index-product.png" alt="Еда для котов.">
+          <a href="form.html" class="promo__link btn">
+            подобрать программу
+          </a>
+        </div>
+      </section>
+      <section class="program">
+        <h2 class="visually-hidden">
+          Программы.
+        </h2>
+        <div class="program__container container">
+          <div class="program-card program-card--slim">
+            <h3 class="program-card__title">
+              похудение
+            </h3>
+            <p class="program-card__desc">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a href="catalog.html" class="program-card__link">
+              каталог slim
+            </a>
+          </div>
+          <div class="program-card program-card--pro">
+            <h3 class="program-card__title">
+              Набор массы
+            </h3>
+            <p class="program-card__desc">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a href="catalog.html" class="program-card__link">
+              каталог pro
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
