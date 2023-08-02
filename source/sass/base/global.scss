@@ -1,0 +1,14 @@
+body {
+  font-family: $main-font;
+  font-size: 14px;
+  color: $special-dark-grey;
+  line-height: 18px;
+  background-color: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+

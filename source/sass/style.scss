@@ -1,1 +1,9 @@
 // Начните писать стили здесь
+@import "base/variables.scss";
+@import "base/mixins.scss";
+@import "base/font.scss";
+@import "base/global.scss";
+@import "blocks/btn.scss";
+@import "blocks/navigation.scss";
+@import "blocks/promo.scss";
+@import "blocks/visually-hidden.scss";
