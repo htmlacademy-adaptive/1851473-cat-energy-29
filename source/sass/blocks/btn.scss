@@ -1,0 +1,15 @@
+
+.btn {
+  color: #ffffff;
+  text-align: center;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic-green;
+
+  &--small {
+    font-size: 14px;
+  }
+}

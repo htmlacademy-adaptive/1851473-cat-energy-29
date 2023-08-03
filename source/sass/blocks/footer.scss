@@ -1,0 +1,21 @@
+.footer__desc {
+  color: #111111;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.footer__contacts {
+  line-height: 20px;
+}
+
+.footer__link {
+  text-decoration: none;
+}
+
+.footer__link span {
+  color: $special-dark-grey;
+  font-size: 16px;
+  line-height: 20px;
+}

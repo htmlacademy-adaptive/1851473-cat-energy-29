@@ -1,0 +1,22 @@
+
+.promo {
+  text-align: center;
+  background-color: $basic-green;
+}
+
+.promo__title {
+  color: #ffffff;
+  font-family: $oswald-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.promo__desc {
+  color: #ffffff;
+  font-family: $oswald-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}

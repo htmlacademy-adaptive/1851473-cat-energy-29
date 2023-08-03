@@ -1,0 +1,32 @@
+.form__label {
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__control {
+  color: $special-dark-grey;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &::placeholder {
+    opacity: 1;
+    color: $special-dark-grey;
+  }
+}
+
+.form__title {
+  color: #000000;
+  font-family: $oswald-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.form__required {
+  color: #000000;
+  line-height: 16px;
+}
