@@ -11,6 +11,10 @@
 .product__table {
   font-size: 12px;
   line-height: 16px;
+
+  th {
+    font-weight: 400;
+  }
 }
 
 .product__title {
@@ -32,3 +36,4 @@
   font-size: 12px;
   line-height: 16px;
 }
+
