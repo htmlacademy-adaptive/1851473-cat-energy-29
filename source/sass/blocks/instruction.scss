@@ -9,3 +9,32 @@
 .instruction__list {
   @include list;
 }
+
+.instruction__item {
+  margin-bottom: 20px;
+  padding-left: 80px;
+  outline: 1px solid rgb(128, 0, 128);
+}
+
+@media (min-width: $tablet-width) {
+  .instruction__list {
+    display: grid;
+    grid-template-columns: repeat(2, 249px);
+    gap: 37px 135px;
+  }
+
+  .instruction__item {
+    margin-bottom: 0;
+    padding-top: 151px;
+    padding-left: 0;
+    padding-bottom: 57px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .instruction__list {
+    grid-template-columns: repeat(4, 249px);
+    gap: 37px 77px;
+  }
+}

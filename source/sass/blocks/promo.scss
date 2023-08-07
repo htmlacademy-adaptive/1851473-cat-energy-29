@@ -20,3 +20,44 @@
   line-height: 14px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .promo__container {
+    position: relative;
+    min-height: 600px;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .promo {
+    background-color: transparent;
+    text-align: left;
+  }
+
+  .promo__title {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .promo__desc {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__container {
+    min-width: 500px;
+
+    img {
+      right: 200px;
+      left: auto;
+    }
+  }
+}

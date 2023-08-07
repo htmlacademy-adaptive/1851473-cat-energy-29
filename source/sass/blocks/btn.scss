@@ -13,3 +13,10 @@
     font-size: 14px;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .btn--small {
+    font-size: 20px;
+  }
+}
