@@ -13,3 +13,11 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .inner-header--form {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+

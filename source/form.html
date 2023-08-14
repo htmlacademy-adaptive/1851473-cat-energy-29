@@ -9,11 +9,11 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <div class="header__field">
-          <a href="index.html" class="logo">
+        <div class="header__wrapper">
+          <a class="logo" href="index.html">
             <img src="img/logo-mobile.svg" alt="Логотип." class="logo__img">
           </a>
-          <a href="index.html" class="logo logo--text">
+          <a class="logo logo--text" href="index.html">
             <img src="img/logo-text.svg" alt="Cat energy." class="logo__img-text">
           </a>
           <button class="header__burger" type="button">
@@ -25,7 +25,7 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="index.html" class="navigation__link">
+              <a class="navigation__link navigation__link--active">
                 главная
               </a>
             </li>
@@ -35,7 +35,7 @@
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--active">
+              <a href="form.html" class="navigation__link">
                 подбор программы
               </a>
             </li>
@@ -44,7 +44,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="inner-header container">
+      <section class="inner-header inner-header--form container">
         <h1 class="inner-header__title">
           Подбор программы
         </h1>
@@ -100,17 +100,19 @@
             <h2 class="form__title">
               Контактные данные (владельца кота)
             </h2>
-            <div class="form__field">
-              <label for="email" class="form__label">
-                E-mail:*
-              </label>
-              <input type="email" id="email" name="email" class="form__control form__control--icon" placeholder="kuklachev@gmail.com" required>
-            </div>
-            <div class="form__field">
-              <label for="tel" class="form__label">
-                Телефон:*
-              </label>
-              <input type="tel" id="tel" name="tel" class="form__control form__control--icon" placeholder="8 (960) 900-60-90" required>
+            <div class="form__contact-container">
+              <div class="form__field">
+                <label for="email" class="form__label">
+                  E-mail:*
+                </label>
+                <input type="email" id="email" name="email" class="form__control form__control--icon" placeholder="kuklachev@gmail.com" required>
+              </div>
+              <div class="form__field">
+                <label for="tel" class="form__label">
+                  Телефон:*
+                </label>
+                <input type="tel" id="tel" name="tel" class="form__control form__control--icon" placeholder="8 (960) 900-60-90" required>
+              </div>
             </div>
           </fieldset>
         </div>
@@ -127,29 +129,31 @@
             <h2 class="form__title">
               Дополнительно
             </h2>
-            <div class="form__field">
-              <input type="checkbox" class="visually-hidden form__checkbox" id="sweetener" name="products" value="sweetener">
-              <label for="sweetener" class="form__label form__label--checkbox">
-                сахарозаменитель
-              </label>
-            </div>
-            <div class="form__field">
-              <input type="checkbox" class="visually-hidden form__checkbox" id="water" name="products" value="water">
-              <label for="water" class="form__label form__label--checkbox">
-                питьевая вода
-              </label>
-            </div>
-            <div class="form__field">
-              <input type="checkbox" class="visually-hidden form__checkbox" id="milk" name="products" value="milk">
-              <label for="milk" class="form__label form__label--checkbox">
-                молоко
-              </label>
-            </div>
-            <div class="form__field">
-              <input type="checkbox" class="visually-hidden form__checkbox" id="vitamins" name="products" value="vitamins">
-              <label for="vitamins" class="form__label form__label--checkbox">
-                витамины
-              </label>
+            <div class="form__checkbox-container">
+              <div class="form__field">
+                <input type="checkbox" class="visually-hidden form__checkbox" id="sweetener" name="products" value="sweetener">
+                <label for="sweetener" class="form__label form__label--checkbox">
+                  сахарозаменитель
+                </label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" class="visually-hidden form__checkbox" id="water" name="products" value="water">
+                <label for="water" class="form__label form__label--checkbox">
+                  питьевая вода
+                </label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" class="visually-hidden form__checkbox" id="milk" name="products" value="milk">
+                <label for="milk" class="form__label form__label--checkbox">
+                  молоко
+                </label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" class="visually-hidden form__checkbox" id="vitamins" name="products" value="vitamins">
+                <label for="vitamins" class="form__label form__label--checkbox">
+                  витамины
+                </label>
+              </div>
             </div>
           </fieldset>
         </div>
@@ -165,9 +169,9 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__field">
+        <div class="footer__wrapper">
           <p class="footer__desc">
-            приглашаем к сотрудничеству дилеров!
+            приглашаем к&nbsp;сотрудничеству дилеров!
           </p>
           <p class="footer__contacts">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -179,7 +183,7 @@
         <img src="img/pin.png" alt="Метка на карте.">
       </div>
       <div class="footer__navigation container">
-        <a href="#" class="footer__link logo">
+        <a href="#" class="footer__logo logo">
           <img src="img/logo-text.svg" alt="Cat energy.">
         </a>
         <ul class="social-list">

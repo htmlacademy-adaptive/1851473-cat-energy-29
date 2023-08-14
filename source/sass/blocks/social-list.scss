@@ -1,0 +1,18 @@
+.social-list {
+  @include list;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-list__link {
+  width: 28px;
+  height: 22px;
+  display: block;
+  outline: 1px solid indigo;
+}
+
+.social-list__item {
+  margin-left: 12px;
+  margin-right: 12px;
+}
