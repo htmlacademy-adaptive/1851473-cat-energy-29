@@ -11,3 +11,21 @@
 .navigation__list {
   @include list;
 }
+
+.navigation {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    display: block;
+  }
+
+  .navigation__list {
+    display: flex;
+  }
+
+  .navigation__item {
+    margin-left: 33px;
+  }
+}

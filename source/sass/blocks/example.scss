@@ -25,4 +25,51 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 100%;
+}
+
+.example {
+  background-color: #eaeaea;
+}
+
+.example__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .example__info {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .example__info-price {
+    width: 200px;
+    margin-left: auto;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .example {
+    background-color: transparent;
+    background-image: linear-gradient(to top, #eaeaea 0%, #eaeaea 462px, #ffffff 462px, #ffffff 100%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__wrapper {
+    width: 440px;
+  }
+
+  .example__info-price {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+  }
 }

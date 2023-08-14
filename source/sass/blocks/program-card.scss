@@ -15,3 +15,21 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.program-card {
+  background-color: #f2f2f2;
+  padding: 30px 20px 20px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-card {
+    padding: 77px 316px 57px 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-card {
+    padding: 77px 61px 59px 52px;
+    width: 570px;
+  }
+}

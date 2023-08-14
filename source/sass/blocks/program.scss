@@ -1,0 +1,25 @@
+.program__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .program__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__container {
+    display: flex;
+  }
+
+  .program__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(even) {
+      margin-left: 80px;
+    }
+  }
+}

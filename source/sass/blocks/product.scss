@@ -11,6 +11,16 @@
 .product__table {
   font-size: 12px;
   line-height: 16px;
+  width: 100%;
+
+  th {
+    font-weight: 400;
+    text-align: left;
+  }
+
+  td {
+    text-align: right;
+  }
 }
 
 .product__title {
@@ -20,6 +30,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  width: 80px;
 }
 
 .product--add {
@@ -31,4 +42,26 @@
 .product__description {
   font-size: 12px;
   line-height: 16px;
+}
+
+.product {
+  border-top: 1px solid #ebebeb;
+  padding: 20px 20px 25px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product__btn {
+  width: 100%;
+}
+
+.product__desc {
+  width: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    flex-direction: column;
+  }
 }
