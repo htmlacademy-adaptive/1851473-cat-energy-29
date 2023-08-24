@@ -56,3 +56,28 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header {
+    &--index {
+      background-image: linear-gradient(to right, #ffffff 50%, #65a73d 50%);
+      position: relative;
+
+      &::before {
+        @include pseudo;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 694px;
+        background-image: url("../img/desctop-green-cat.jpg"), linear-gradient(to right, #ffffff 50%, #65a73d 50%);
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+    }
+  }
+
+  .header__container {
+    position: relative;
+    z-index: 10;
+  }
+}

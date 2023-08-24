@@ -5,6 +5,8 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+  padding-left: 70px;
+  margin: 0;
 }
 
 .program-card__link {
@@ -14,16 +16,98 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-right: 47px;
+
+  &::before {
+    @include pseudo;
+    width: 24px;
+    height: 11px;
+    top: 3px;
+    right: 8px;
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: width 0.3s, right 0.3s;
+  }
+
+  &:hover {
+    &::before {
+      width: 32px;
+      right: 0;
+      transition: width 0.3s, right 0.3s;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .program-card {
+  position: relative;
   background-color: #f2f2f2;
   padding: 30px 20px 20px 20px;
+
+  &::before {
+    @include pseudo;
+    width: 67px;
+    height: 53px;
+    top: 21px;
+    left: 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--slim {
+    &::before {
+      background-image: url("../img/cat-black-slim.svg");
+    }
+  }
+
+  &--pro {
+    &::before {
+      background-image: url("../img/cat-black-pro.svg");
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .program-card {
     padding: 77px 316px 57px 52px;
+
+    &::before {
+      width: 268px;
+      height: 211px;
+      top: 81px;
+      left: auto;
+      right: 29px;
+    }
+  }
+
+  .program-card__title {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  .program-card__link {
+    font-size: 20px;
+    line-height: normal;
+
+    &::before {
+      top: 9px;
+    }
+  }
+
+  .program-card__desc {
+    margin-bottom: 52px;
+    font-size: 16px;
+    color: #000000;
+    line-height: 24px;
   }
 }
 
@@ -31,5 +115,22 @@
   .program-card {
     padding: 77px 61px 59px 52px;
     width: 570px;
+
+    &::before {
+      width: 134px;
+      height: 106px;
+      top: 41px;
+      left: 32px;
+      right: auto;
+    }
+  }
+
+  .program-card__title {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
+
+  .program-card__desc {
+    margin-bottom: 27px;
   }
 }

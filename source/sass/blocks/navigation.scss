@@ -6,6 +6,20 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active,
+  &--active:hover,
+  &--active:active {
+    opacity: 1;
+  }
 }
 
 .navigation__list {
@@ -39,5 +53,26 @@
 
   .navigation__item {
     margin-left: 33px;
+  }
+
+  .navigation__link {
+    &--active {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    &--index {
+      .navigation__link {
+        color: #ffffff;
+
+        &--active {
+          border-bottom: 2px solid #ffffff;
+        }
+      }
+    }
   }
 }
