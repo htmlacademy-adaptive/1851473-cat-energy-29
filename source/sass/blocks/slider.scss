@@ -1,3 +1,40 @@
 .slider__img--thin {
   display: none;
 }
+
+.slider__btn {
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #666666;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 138px;
+
+  &::before {
+    @include pseudo;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+}
+
+.slider {
+  position: relative;
+}

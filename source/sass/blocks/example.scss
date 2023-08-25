@@ -4,6 +4,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+  margin-top: 0;
 }
 
 .example__info-item span {
@@ -11,11 +12,23 @@
   font-family: $oswald-font;
   font-size: 24px;
   line-height: 24px;
+  display: block;
+  border: 1px solid #cdcdcd;
+  text-align: center;
+  padding: 15px 5px 17px 5px;
+  border-radius: 4px;
 }
 
 .example__info-item p {
   font-size: 12px;
   line-height: 12px;
+  width: 87px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -11px;
+  background-color: #eaeaea;
 }
 
 .example__info-price {
@@ -26,16 +39,19 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 100%;
+  margin-top: 20px;
 }
 
 .example {
   background-color: #eaeaea;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .example__info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
 }
 
 @media (min-width: $tablet-width) {
