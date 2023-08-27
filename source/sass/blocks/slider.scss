@@ -1,6 +1,6 @@
-.slider__img--thin {
-  display: none;
-}
+// .slider__img--thin {
+//   display: none;
+// }
 
 .slider__btn {
   width: 4px;
@@ -33,8 +33,49 @@
     transform: translate(-50%, -50%);
     z-index: 3;
   }
+
+  &:hover {
+    background-color: $basic-green;
+
+    &::before {
+      border-color: $basic-green;
+    }
+
+    svg {
+      fill: $basic-green;
+    }
+  }
+
+  &:active {
+    background-color: $basic-green-hover;
+    opacity: 0.6;
+
+    &::before {
+      border-color: $basic-green-hover;
+    }
+
+    svg {
+      fill: $basic-green-hover;
+    }
+  }
 }
 
 .slider {
   position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider__img--fat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  background-color: #eaeaea;
+
+  img {
+    max-width: none;
+  }
 }
