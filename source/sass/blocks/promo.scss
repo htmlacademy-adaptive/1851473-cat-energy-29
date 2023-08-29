@@ -35,7 +35,7 @@
 @media (min-width: $tablet-width) {
   .promo__container {
     position: relative;
-    min-height: 600px;
+    min-height: 807px;
     padding-left: 120px;
 
     img {
@@ -68,17 +68,20 @@
   }
 
   .promo__link {
+    position: relative;
     width: 244px;
+    z-index: 3;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__container {
-    min-width: 500px;
+    min-height: 551px;
 
     img {
-      right: 200px;
+      right: 269px;
       left: auto;
+      bottom: 52px;
     }
   }
 }

@@ -14,9 +14,25 @@
   width: 28px;
   height: 22px;
   display: block;
+
+  &:hover svg {
+    fill: $basic-green;
+  }
+
+  &:active svg {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
 }
 
 .social-list__item {
   margin-left: 12px;
   margin-right: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    border: none;
+    width: auto;
+  }
 }
