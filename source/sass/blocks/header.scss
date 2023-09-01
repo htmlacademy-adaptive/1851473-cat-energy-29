@@ -7,18 +7,89 @@
 }
 
 .header__burger {
-  width: 24px;
-  height: 24px;
+  display: none;
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .header__burger {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    position: relative;
+    border: none;
+    background-color: transparent;
+
+    span {
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #000000;
+
+      &:nth-child(1) {
+        top: 2px;
+      }
+
+      &:nth-child(2) {
+        top: 10px;
+      }
+
+      &:nth-child(3) {
+        top: 18px;
+      }
+    }
+  }
+
+  .header__navigation {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .header__burger {
-    display: none;
-  }
-
   .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 25px;
+  }
+
+  .header__wrapper {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    &--index {
+      background-image: linear-gradient(to right, #ffffff 50%, #65a73d 50%);
+      position: relative;
+
+      &::before {
+        @include pseudo;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 694px;
+        background-image: url("../img/green-cat-desktop.jpg"), linear-gradient(to right, #ffffff 50%, #65a73d 50%);
+        background-repeat: no-repeat;
+        background-position: right;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/green-cat-desktop.jpg"), linear-gradient(to right, #ffffff 50%, #65a73d 50%);
+          background-size: 720px 694px, auto;
+        }
+      }
+    }
+  }
+
+  .header__container {
+    position: relative;
+    z-index: 10;
+    padding-top: 55px;
+    padding-bottom: 25px;
   }
 }

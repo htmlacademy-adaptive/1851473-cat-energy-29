@@ -1,18 +1,38 @@
 .social-list {
   @include list;
-
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .social-list__link {
   width: 28px;
   height: 22px;
   display: block;
-  outline: 1px solid indigo;
+
+  &:hover svg {
+    fill: $basic-green;
+  }
+
+  &:active svg {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
 }
 
 .social-list__item {
   margin-left: 12px;
   margin-right: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    border: none;
+    width: auto;
+  }
 }

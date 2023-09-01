@@ -8,9 +8,25 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $basic-green;
+  padding: 10px;
+  display: inline-block;
 
   &--small {
     font-size: 14px;
+  }
+
+  &:hover {
+    background-color: $basic-green-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    color: #ffffff;
+    background-color: $basic-green;
   }
 }
 

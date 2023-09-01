@@ -1,7 +1,16 @@
 
 .promo {
   text-align: center;
-  background-color: $basic-green;
+  padding-top: 27px;
+  background-image: url("../img/green-cat.jpg"), linear-gradient(to bottom, #64a73c 302px, #ffffff 302px);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-bottom: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/green-cat@2x.jpg"), linear-gradient(to bottom, #64a73c 302px, #ffffff 302px);
+    background-size: 320px 302px, auto;
+  }
 }
 
 .promo__title {
@@ -10,6 +19,8 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .promo__desc {
@@ -19,12 +30,18 @@
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.promo__link {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .promo__container {
     position: relative;
-    min-height: 600px;
+    min-height: 807px;
+    padding-left: 120px;
 
     img {
       position: absolute;
@@ -36,28 +53,40 @@
   .promo {
     background-color: transparent;
     text-align: left;
+    background-image: none;
+    padding-top: 65px;
   }
 
   .promo__title {
     color: #000000;
     font-size: 60px;
     line-height: 60px;
+    max-width: 450px;
+    margin-bottom: 40px;
   }
 
   .promo__desc {
     color: #000000;
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .promo__link {
+    position: relative;
+    width: 244px;
+    z-index: 3;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__container {
-    min-width: 500px;
+    min-height: 551px;
 
     img {
-      right: 200px;
+      right: 269px;
       left: auto;
+      bottom: 52px;
     }
   }
 }

@@ -4,6 +4,13 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.instruction {
+  padding-top: 20px;
+  padding-bottom: 29px;
 }
 
 .instruction__list {
@@ -13,7 +20,48 @@
 .instruction__item {
   margin-bottom: 20px;
   padding-left: 80px;
-  outline: 1px solid rgb(128, 0, 128);
+  position: relative;
+  min-height: 60px;
+  padding-top: 2px;
+
+  p {
+    margin: 0;
+  }
+
+  &::before {
+    @include pseudo;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--icon-leaf {
+    &::before {
+      background-image: url("../img/icon-leaf.svg");
+    }
+  }
+
+  &--icon-water {
+    &::before {
+      background-image: url("../img/icon-water.svg");
+    }
+  }
+
+  &--icon-eat {
+    &::before {
+      background-image: url("../img/icon-eat.svg");
+    }
+  }
+
+  &--icon-clock {
+    &::before {
+      background-image: url("../img/icon-clock.svg");
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -21,6 +69,12 @@
     display: grid;
     grid-template-columns: repeat(2, 249px);
     gap: 37px 135px;
+    counter-reset: myCounter;
+  }
+
+  .instruction__title {
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .instruction__item {
@@ -28,6 +82,31 @@
     padding-top: 151px;
     padding-left: 0;
     padding-bottom: 57px;
+
+    p {
+      position: relative;
+      z-index: 3;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+
+    &::after {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      position: absolute;
+      color: #f2f2f2;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      width: 136px;
+      font-family: $oswald-font;
+      top: 0;
+      right: 0;
+    }
   }
 }
 
