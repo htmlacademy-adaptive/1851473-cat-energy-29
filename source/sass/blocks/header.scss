@@ -54,6 +54,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 25px;
+  }
+
+  .header__wrapper {
+    padding: 0;
   }
 }
 
@@ -69,9 +74,14 @@
         top: 0;
         left: 0;
         height: 694px;
-        background-image: url("../img/desctop-green-cat.jpg"), linear-gradient(to right, #ffffff 50%, #65a73d 50%);
+        background-image: url("../img/green-cat-desktop.jpg"), linear-gradient(to right, #ffffff 50%, #65a73d 50%);
         background-repeat: no-repeat;
         background-position: right;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/green-cat-desktop.jpg"), linear-gradient(to right, #ffffff 50%, #65a73d 50%);
+          background-size: 720px 694px, auto;
+        }
       }
     }
   }
@@ -79,5 +89,7 @@
   .header__container {
     position: relative;
     z-index: 10;
+    padding-top: 55px;
+    padding-bottom: 25px;
   }
 }

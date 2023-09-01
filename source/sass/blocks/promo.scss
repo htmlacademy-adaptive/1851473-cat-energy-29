@@ -6,6 +6,11 @@
   background-repeat: no-repeat;
   background-position: center top;
   padding-bottom: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/green-cat@2x.jpg"), linear-gradient(to bottom, #64a73c 302px, #ffffff 302px);
+    background-size: 320px 302px, auto;
+  }
 }
 
 .promo__title {
