@@ -1,5 +1,28 @@
 .gift {
   background-color: $basic-green;
+  background-image: url("../img/green-cat-catalog.png");
+  padding-top: 187px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-size: cover;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/green-cat-catalog@2x.png");
+  }
+
+  &::before {
+    @include pseudo;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .gift__desc {
@@ -8,4 +31,46 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  margin: 0 auto;
+  width: 166px;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    padding: 71px 125px 69px 421px;
+    background-image: url("../img/green-cat-catalog-tablet.png");
+
+    &::before {
+      width: 80px;
+      height: 82px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 77px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/green-cat-catalog-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    padding-top: 185px;
+    padding-bottom: 43px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url("../img/green-cat-catalog-desktop.png");
+    margin: 0;
+
+    &::before {
+      top: 56px;
+      transform: none;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/green-cat-catalog-desktop@2x.png");
+    }
+  }
 }

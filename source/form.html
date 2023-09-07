@@ -11,7 +11,11 @@
       <div class="header__container container">
         <div class="header__wrapper">
           <a class="logo" href="index.html">
-            <img src="img/logo-mobile.svg" alt="Логотип." class="logo__img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="50">
+              <img src="img/logo-mobile.svg" alt="Логотип." class="logo__img" width="33" height="38">
+            </picture>
           </a>
           <a class="logo logo--text" href="index.html">
             <img src="img/logo-text.svg" alt="Cat energy." class="logo__img-text">
@@ -22,10 +26,10 @@
             <span></span>
           </button>
         </div>
-        <nav class="navigation">
+        <nav class="navigation header__navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="index.html" class="navigation__link navigation__link">
+              <a href="index.html" class="navigation__link">
                 главная
               </a>
             </li>
@@ -54,11 +58,12 @@
       </section>
       <form action="https://echo.htmlacademy.ru/" class="form">
         <div class="form__container container">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--name">
             <div class="form__field">
               <label for="name" class="form__label">
                 ИМЯ:*
               </label>
+              <!-- класс при ошибке: form__control--error -->
               <input type="text" id="name" name="name" class="form__control" placeholder="барсик" required>
             </div>
             <div class="form__field">
@@ -74,9 +79,9 @@
               <input type="number" id="age" name="age" class="form__control" placeholder="7">
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--radio">
             <div class="form__field">
-              <input type="radio" class="visually-hidden form__radio" id="slim" name="program" value="slim">
+              <input type="radio" class="visually-hidden form__radio" id="slim" name="program" value="slim" checked>
               <label for="slim" class="form__label form__label--radio">
                 похудение
               </label>
@@ -96,7 +101,7 @@
           </fieldset>
         </div>
         <div class="form__wrapper">
-          <fieldset class="form__fieldset container">
+          <fieldset class="form__fieldset form__fieldset--contact container">
             <h2 class="form__title">
               Контактные данные (владельца кота)
             </h2>
@@ -106,18 +111,25 @@
                   E-mail:*
                 </label>
                 <input type="email" id="email" name="email" class="form__control form__control--icon" placeholder="kuklachev@gmail.com" required>
+                <svg width="21" height="20" stroke="black" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
               </div>
               <div class="form__field">
                 <label for="tel" class="form__label">
                   Телефон:*
                 </label>
                 <input type="tel" id="tel" name="tel" class="form__control form__control--icon" placeholder="8 (960) 900-60-90" required>
+                <svg width="21" stroke="black" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </div>
             </div>
           </fieldset>
         </div>
         <div class="form__wrapper">
-          <fieldset class="form__fieldset container">
+          <fieldset class="form__fieldset form__fieldset--message container">
             <label class="form__title" for="textarea">
               Комментарий
             </label>
@@ -125,13 +137,13 @@
           </fieldset>
         </div>
         <div class="form__wrapper">
-          <fieldset class="form__fieldset container">
+          <fieldset class="form__fieldset form__fieldset--checkbox container">
             <h2 class="form__title">
               Дополнительно
             </h2>
             <div class="form__checkbox-container">
               <div class="form__field">
-                <input type="checkbox" class="visually-hidden form__checkbox" id="sweetener" name="products" value="sweetener">
+                <input type="checkbox" class="visually-hidden form__checkbox" id="sweetener" name="products" value="sweetener" checked>
                 <label for="sweetener" class="form__label form__label--checkbox">
                   сахарозаменитель
                 </label>
