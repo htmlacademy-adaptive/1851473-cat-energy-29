@@ -4,12 +4,13 @@
   text-align: center;
   font-family: $oswald-font;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $basic-green;
   padding: 10px;
   display: inline-block;
+  border: none;
 
   &--small {
     font-size: 14px;
