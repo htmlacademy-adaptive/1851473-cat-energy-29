@@ -1,0 +1,13 @@
+{
+  "name":"",
+  "short_name":"",
+  "icons":[
+    {"src":"img/favicon/favicon16.png","sizes":"16x16","type":"image/png"},
+    {"src":"img/favicon/favicon32.png","sizes":"32x32","type":"image/png"},
+    {"src":"img/favicon/favicon152.png","sizes":"152x152","type":"image/png"},
+    {"src":"img/favicon/apple-touch-icon.png","sizes":"152x152","type":"image/png"}
+  ],
+  "theme_color":"#ffffff",
+  "background_color":"#ffffff",
+  "display":"standalone"
+}
