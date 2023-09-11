@@ -27,7 +27,7 @@
 }
 
 .navigation {
-  display: block;
+  display: none;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -52,10 +52,15 @@
   }
 
   .navigation__item {
-    margin-left: 33px;
+    margin-left: 29px;
+    margin-right: 5px;
   }
 
   .navigation__link {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 6px;
+
     &--active {
       border-bottom: 2px solid $basic-green;
     }
@@ -65,6 +70,10 @@
 
 @media (min-width: $desktop-width) {
   .navigation {
+    .navigation__link {
+      font-size: 20px;
+    }
+
     &--index {
       .navigation__link {
         color: #ffffff;
@@ -74,5 +83,10 @@
         }
       }
     }
+  }
+
+  .navigation__item {
+    margin-right: 0;
+    margin-left: 34px;
   }
 }

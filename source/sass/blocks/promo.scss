@@ -46,7 +46,7 @@
     img {
       position: absolute;
       bottom: 0;
-      left: 0;
+      right: 28px;
     }
   }
 
@@ -54,7 +54,8 @@
     background-color: transparent;
     text-align: left;
     background-image: none;
-    padding-top: 65px;
+    padding-top: 59px;
+    padding-bottom: 3px;
   }
 
   .promo__title {
@@ -76,6 +77,8 @@
     position: relative;
     width: 244px;
     z-index: 3;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
 }
 
@@ -84,9 +87,14 @@
     min-height: 551px;
 
     img {
-      right: 269px;
+      right: 262px;
       left: auto;
-      bottom: 52px;
+      bottom: 131px;
     }
+  }
+
+  .promo {
+    padding-top: 79px;
+    padding-bottom: 1px;
   }
 }

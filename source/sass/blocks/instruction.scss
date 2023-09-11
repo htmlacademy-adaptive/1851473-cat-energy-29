@@ -72,9 +72,15 @@
     counter-reset: myCounter;
   }
 
+  .instruction {
+    padding-top: 44px;
+    padding-bottom: 46px;
+  }
+
   .instruction__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 33px;
   }
 
   .instruction__item {
@@ -113,7 +119,11 @@
 
 @media (min-width: $desktop-width) {
   .instruction__list {
-    grid-template-columns: repeat(4, 249px);
+    grid-template-columns: repeat(4, 248px);
     gap: 37px 77px;
+  }
+
+  .instruction {
+    padding-top: 70px;
   }
 }
