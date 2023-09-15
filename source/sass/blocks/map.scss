@@ -1,6 +1,10 @@
 .map {
   text-align: center;
   position: relative;
+
+  img {
+    vertical-align: bottom;
+  }
 }
 
 .map__iframe {
