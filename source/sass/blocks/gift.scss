@@ -52,6 +52,10 @@
       background-image: url("../img/green-cat-catalog-tablet@2x.png");
     }
   }
+
+  .gift__desc {
+    text-align: left;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -67,10 +71,15 @@
     &::before {
       top: 56px;
       transform: none;
+      left: 84px;
     }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/green-cat-catalog-desktop@2x.png");
     }
+  }
+
+  .gift__desc {
+    text-align: center;
   }
 }

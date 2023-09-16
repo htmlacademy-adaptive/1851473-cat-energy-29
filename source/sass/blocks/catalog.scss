@@ -11,13 +11,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    padding-top: 43px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
     grid-template-columns: repeat(4, 1fr);
-    gap: 63px 80px;
+    gap: 64px 80px;
     padding-bottom: 50px;
   }
 }
