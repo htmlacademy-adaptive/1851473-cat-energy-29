@@ -173,8 +173,8 @@
 
     + svg {
       position: absolute;
-      top: 12px;
-      right: 13px;
+      top: 13px;
+      right: 11px;
     }
   }
 }
@@ -214,8 +214,30 @@
   margin: 0;
 
   &--contact {
+    padding-bottom: 0;
+
     .form__title {
       width: 227px;
+    }
+  }
+
+  &--message {
+    padding-bottom: 0;
+
+    .form__title {
+      margin-bottom: 38px;
+    }
+  }
+
+  &--checkbox {
+    padding-bottom: 19px;
+
+    .form__title {
+      margin-bottom: 33px;
+    }
+
+    .form__field {
+      margin-bottom: 13px;
     }
   }
 }
@@ -227,6 +249,7 @@
   padding-bottom: 14px;
   padding-right: 10px;
   resize: none;
+  vertical-align: bottom;
 }
 
 .form__wrapper {
@@ -248,7 +271,8 @@
 }
 
 .form__fieldset--radio {
-  padding-bottom: 14px;
+  padding-bottom: 6px;
+  padding-top: 22px;
 
   .form__field {
     margin-bottom: 13px;
@@ -305,6 +329,7 @@
     padding-left: 70px;
     padding-right: 70px;
     align-items: center;
+    padding-bottom: 59px;
   }
 
   .form__label {
@@ -316,18 +341,12 @@
     height: 52px;
     font-size: 20px;
     line-height: 1.5;
+    padding-left: 19px;
   }
 
   .form__required {
-    margin-left: 64px;
-  }
-
-  .form__fieldset--radio {
-    border: 1px solid #e7e7e7;
-    padding-top: 23px;
-    padding-right: 27px;
-    padding-bottom: 14px;
-    padding-left: 27px;
+    margin-left: 57px;
+    margin-bottom: 6px;
   }
 
   .form__label--radio {
@@ -346,13 +365,13 @@
     }
   }
 
-  .form__fieldset--contact .form__title {
-    width: auto;
-  }
-
   .form__title {
     font-size: 36px;
     line-height: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    margin-right: -40px;
   }
 
   .form__wrapper {
@@ -388,13 +407,67 @@
 
   .form__btn {
     width: 284px;
-    font-size: 20;
+    font-size: 20px;
     line-height: 26px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     margin: 0;
   }
 
   .form__field {
     margin-bottom: 20px;
+  }
+
+  .form__container {
+    padding-top: 28px;
+    padding-bottom: 43px;
+  }
+
+  .form__fieldset {
+    &--name {
+      padding-bottom: 72px;
+    }
+
+    &--radio {
+      border: 1px solid #e7e7e7;
+      padding-top: 23px;
+      padding-right: 27px;
+      padding-bottom: 14px;
+      padding-left: 27px;
+
+      .form__field {
+        margin-bottom: 10px;
+      }
+    }
+
+    &--contact {
+      padding-bottom: 42px;
+
+      .form__title {
+        width: auto;
+        margin-bottom: 75px;
+      }
+    }
+
+    &--message {
+      padding-bottom: 42px;
+
+      .form__title {
+        margin-bottom: 85px;
+      }
+    }
+
+    &--checkbox {
+      padding-bottom: 49px;
+
+      .form__title {
+        margin-bottom: 57px;
+      }
+
+      .form__field {
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -403,6 +476,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-top: 54px;
+    padding-bottom: 46px;
 
     .form__fieldset {
       width: 570px;
@@ -419,10 +494,6 @@
     justify-content: space-between;
   }
 
-  .form__fieldset--name {
-    padding: 0;
-  }
-
   .form__wrapper {
     .form__fieldset {
       margin-left: auto;
@@ -430,25 +501,54 @@
     }
   }
 
-  .form__fieldset--contact {
-    .form__field {
-      width: 570px;
-      margin-bottom: 0;
-    }
-  }
-
   .form__footer {
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 79px;
   }
 
   .form__btn {
     width: 570px;
   }
 
-  .form__fieldset--checkbox {
-    .form__field {
-      margin-bottom: 0;
+  .form__fieldset {
+    &--name {
+      padding: 0;
     }
+
+    &--contact {
+      padding-bottom: 46px;
+
+      .form__field {
+        width: 570px;
+        margin-bottom: 0;
+      }
+    }
+
+    &--checkbox {
+      padding-bottom: 57px;
+
+      .form__field {
+        margin-bottom: 0;
+      }
+    }
+
+    &--message {
+      padding-bottom: 46px;
+
+      .form__title {
+        margin-bottom: 79px;
+      }
+    }
+  }
+
+  .form__control--textarea {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .form__required {
+    margin-left: 77px;
+    margin-bottom: 3px;
   }
 }
