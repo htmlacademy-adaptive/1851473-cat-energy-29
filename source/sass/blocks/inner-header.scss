@@ -14,6 +14,8 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  max-width: 235px;
+  margin-bottom: 10px;
 }
 
 .inner-header {
@@ -43,5 +45,22 @@
 
   .inner-header {
     border-top: none;
+    padding-top: 44px;
+
+    &--form {
+      padding-top: 59px;
+
+      .inner-header__title {
+        margin-bottom: 54px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-header {
+    &--form {
+      padding-top: 43px;
+    }
   }
 }

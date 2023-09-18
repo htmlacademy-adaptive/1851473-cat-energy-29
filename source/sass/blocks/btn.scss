@@ -12,10 +12,6 @@
   display: inline-block;
   border: none;
 
-  &--small {
-    font-size: 14px;
-  }
-
   &:hover {
     background-color: $basic-green-hover;
   }

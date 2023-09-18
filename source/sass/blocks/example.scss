@@ -5,6 +5,11 @@
   font-weight: 400;
   line-height: 40px;
   margin-top: 0;
+  margin-bottom: 39px;
+}
+
+.example__desc {
+  margin-bottom: 20px;
 }
 
 .example__info-item span {
@@ -40,12 +45,13 @@
   text-transform: uppercase;
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 18px;
 }
 
 .example {
   background-color: #eaeaea;
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 39px;
 }
 
 .example__info {
@@ -67,6 +73,12 @@
     margin-left: auto;
     font-size: 20px;
     text-align: right;
+    margin-top: 12px;
+
+    span {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
   }
 
   .example {
@@ -74,7 +86,7 @@
     background-image: linear-gradient(to top, #eaeaea 0%, #eaeaea 462px, #ffffff 462px, #ffffff 100%);
     border-top: 1px solid #e6e6e6;
     padding-top: 45px;
-    padding-bottom: 95px;
+    padding-bottom: 101px;
   }
 
   .example__title {
@@ -112,7 +124,7 @@
   .example__info-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 99px;
+    margin-bottom: 96px;
   }
 }
 
@@ -126,6 +138,8 @@
   .example {
     background-image: linear-gradient(to top, #f2f2f2 0%, #f2f2f2 462px, #ffffff 462px, #ffffff 100%);
     border-top: none;
+    padding-top: 23px;
+    padding-bottom: 65px;
   }
 
   .example__wrapper {
@@ -136,6 +150,7 @@
     width: 100%;
     margin-left: 0;
     text-align: left;
+    margin-bottom: 0;
 
     span {
       margin-right: 63px;
@@ -144,6 +159,7 @@
 
   .example__info-wrapper {
     display: block;
+    margin-bottom: 0;
   }
 
   .example__title {
