@@ -28,6 +28,10 @@
   &:focus-visible svg {
     fill: $basic-green;
   }
+
+  svg {
+    flex-shrink: 0;
+  }
 }
 
 .footer__link span {

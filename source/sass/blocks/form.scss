@@ -106,14 +106,13 @@
 .form {
   input[type="number"]::-webkit-outer-spin-button,
   input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    appearance: none;
   }
 
   input[type="number"],
   input[type="number"]:hover,
   input[type="number"]:focus {
-    appearance: none;
-    -moz-appearance: textfield;
+    appearance: textfield;
   }
 }
 
@@ -139,6 +138,7 @@
   padding-left: 15px;
   padding-right: 15px;
   flex-grow: 1;
+  width: 173px;
 
   &::placeholder {
     opacity: 1;
@@ -381,7 +381,8 @@
   }
 
   .form__control--icon + svg {
-    top: 16px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 14px;
   }
 
@@ -491,6 +492,7 @@
 
   .form__contact-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 

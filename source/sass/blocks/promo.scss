@@ -84,17 +84,21 @@
 
 @media (min-width: $desktop-width) {
   .promo__container {
-    min-height: 551px;
+    min-height: 418px;
 
     img {
       right: 262px;
       left: auto;
-      bottom: 131px;
+      bottom: 0;
     }
   }
 
   .promo {
     padding-top: 79px;
-    padding-bottom: 1px;
+    padding-bottom: 132px;
+  }
+
+  .promo__desc {
+    width: 400px;
   }
 }
