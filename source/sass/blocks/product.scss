@@ -126,16 +126,16 @@
     font-size: 16px;
     line-height: 20px;
     border-collapse: collapse;
-    margin-bottom: 32px;
+    margin-bottom: 29px;
 
     th {
-      padding-bottom: 5px;
+      padding-bottom: 6px;
       padding-top: 5px;
       border-bottom: 1px solid #cdcdcd;
     }
 
     td {
-      padding-top: 5px;
+      padding-top: 6px;
       padding-bottom: 5px;
       border-bottom: 1px solid #cdcdcd;
     }
@@ -204,7 +204,7 @@
   }
 
   .product__img {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 
   .product__title {
@@ -220,6 +220,10 @@
     td {
       padding-top: 6px;
       padding-bottom: 6px;
+    }
+
+    span {
+      text-transform: uppercase;
     }
   }
 
