@@ -53,6 +53,7 @@
     right: 0;
     left: 0;
     margin: 0;
+    z-index: 3;
   }
 
   .navigation--no-js {
@@ -78,7 +79,7 @@
   .navigation__link {
     font-size: 18px;
     line-height: 24px;
-    padding: 10px 0;
+    padding: 6px 0;
     display: inline-block;
 
     &--active {

@@ -10,7 +10,7 @@
   display: none;
 }
 
-header {
+.header {
   position: relative;
 }
 
@@ -102,6 +102,12 @@ header {
 
   .header__wrapper {
     padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .header__container {
+    padding-right: 26px;
   }
 }
 

@@ -176,11 +176,13 @@
     padding-left: 0;
     padding-right: 0;
     justify-content: flex-start;
+    flex-wrap: nowrap;
   }
 
   .additional__product-title {
     margin: 0;
     margin-right: auto;
+    max-width: 320px;
   }
 
   .additional__product-table {

@@ -55,12 +55,20 @@
       }
     }
   }
+
+  .inner-header--catalog {
+    padding-top: 58px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .inner-header {
     &--form {
       padding-top: 43px;
+    }
+
+    &--catalog {
+      padding-top: 42px;
     }
   }
 }

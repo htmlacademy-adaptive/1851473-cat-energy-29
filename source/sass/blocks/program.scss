@@ -10,17 +10,14 @@
 
 @media (min-width: $desktop-width) {
   .program__container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
   }
 
   .program__item {
     &:not(:last-child) {
       margin-bottom: 0;
-    }
-
-    &:nth-child(even) {
-      margin-left: 80px;
     }
   }
 }
